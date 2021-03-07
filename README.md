@@ -4,9 +4,6 @@
 
 ### Technologie do uzycia 
 
-- backend - .net
-- frontend - react
-
 backend:
 - docker
 - swagger,
@@ -25,8 +22,5 @@ backend:
 - ssl/tls?https? owasp?
 - saga
 
-
-
 frontend:
-- react
 - redux
