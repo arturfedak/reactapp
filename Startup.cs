@@ -21,7 +21,7 @@ namespace reactapp
             services.AddMvc(option => option.EnableEndpointRouting = false);
             services.AddSpaStaticFiles(configuration => 
             {
-                configuration.RootPath = "react-client/build";
+                configuration.RootPath = "react-client-ts/build";
             });
         }
 
@@ -41,7 +41,7 @@ namespace reactapp
             app.UseMvc();
             app.UseSpa(spa =>
             {
-                spa.Options.SourcePath = Path.Join(env.ContentRootPath, "react-client");
+                spa.Options.SourcePath = Path.Join(env.ContentRootPath, "react-client-ts");
 
                 if (env.IsDevelopment())
                 {
